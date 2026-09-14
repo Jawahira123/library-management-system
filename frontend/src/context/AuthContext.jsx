@@ -1,9 +1,11 @@
-
 import { createContext, useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
+
+    const navigate = useNavigate();
 
     const [adminLoggedIn, setAdminLoggedIn] = useState(
         localStorage.getItem("adminLoggedIn") === "true"
@@ -29,6 +31,10 @@ export function AuthProvider({ children }) {
 
         setAdminLoggedIn(false);
         setAdminUsername("");
+
+        navigate("/", {
+            replace: true
+        });
     };
 
     return (

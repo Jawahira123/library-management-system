@@ -61,9 +61,15 @@ function Login() {
 
             <div className="auth-brand">
                 <img
-                    src={loginimg}
-                    alt="Library Management System"
-                />
+    src={loginimg}
+    alt="Library Management System"
+    style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        display: "block"
+    }}
+/>
 
                 <div className="brand-overlay">
                     <h1>Library Management System</h1>
