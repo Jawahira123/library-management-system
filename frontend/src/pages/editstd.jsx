@@ -29,7 +29,7 @@ function Editstudents() {
             try {
 
                 const response = await fetch(
-                    `http://localhost:5000/api/student/${id}`
+                    `http://library-management-system-9ds.onrender.com/api/student/${id}`
                 );
 
                 const data = await response.json();
@@ -121,7 +121,7 @@ function Editstudents() {
 
 
             const response = await fetch(
-                `http://localhost:5000/api/student/${id}`,
+                `http://library-management-system-9ds.onrender.com/api/student/${id}`,
                 {
                     method: "PATCH",
 

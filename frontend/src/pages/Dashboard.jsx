@@ -31,8 +31,8 @@ function Dashboard() {
 
                 const [bookResponse, studentResponse] =
                     await Promise.all([
-                        fetch("http://localhost:5000/api/library"),
-                        fetch("http://localhost:5000/api/student")
+                        fetch("http://library-management-system-9ds.onrender.com/api/library"),
+                        fetch("http://library-management-system-9ds.onrender.com/api/student")
                     ]);
 
                 const bookData = await bookResponse.json();

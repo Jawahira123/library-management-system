@@ -26,8 +26,8 @@ function Issuebk() {
 
                 const [studentResponse, bookResponse] =
                     await Promise.all([
-                        fetch("http://localhost:5000/api/student"),
-                        fetch("http://localhost:5000/api/library")
+                        fetch("http://library-management-system-9ds.onrender.com/api/student"),
+                        fetch("http://library-management-system-9ds.onrender.com/api/library")
                     ]);
 
                 const studentData = await studentResponse.json();
@@ -83,7 +83,7 @@ function Issuebk() {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/issue",
+                "http://library-management-system-9ds.onrender.com/api/issue",
                 {
                     method: "POST",
                     headers: {
