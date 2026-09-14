@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import "../css/Books.css";
 import { FaSearch, FaEdit, FaTrash } from "react-icons/fa";
-import { SearchContext } from "../context/searchcontext";
+import { SearchContext } from "../context/SearchContext.jsx";
 import { useNavigate } from "react-router-dom";
 
 function Books() {
