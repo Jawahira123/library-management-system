@@ -1,6 +1,6 @@
 import "../css/student.css";
 import { FaSearch } from "react-icons/fa";
-import { SearchContext } from "../context/searchcontext";
+import { SearchContext } from "../context/SearchContext";
 import { useContext, useEffect, useState } from "react";
 import { CiEdit } from "react-icons/ci";
 import { MdOutlineDeleteOutline } from "react-icons/md";
