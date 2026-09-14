@@ -1,0 +1,27 @@
+$kind: http-request
+name: http://localhost:5000/api/student/2
+description: ""
+url: http://localhost:5000/api/student/2
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \   \r
+
+    \    \"name\": \"hamee\",\r
+
+    \    \"regNo\": \"MCA25007\",\r
+
+    \    \"department\": \"MCA\",\r
+
+    \    \"year\": \"I Year\",\r
+
+    \    \"gender\": \"Male\",\r
+
+    \    \"email\": \"aarav.sharma@gmail.com\",\r
+
+    \    \"phone\": \"9876543201\"\r
+
+    }"
+order: 1788091611849

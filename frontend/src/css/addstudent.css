@@ -1,0 +1,402 @@
+.addstudent-page {
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 26px 32px 40px;
+    background: #ffffff;
+    overflow-y: auto;
+}
+
+.student-page-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.student-page-header h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.student-page-header p {
+    margin: 8px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.student-form-area {
+    width: 100%;
+    max-width: 555px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f3f5fa;
+}
+
+.data-std {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    background: #ffffff;
+    border: 1px solid #e1e6ef;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 14px rgba(17, 24, 39, 0.05);
+}
+
+.student-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.student-field > label {
+    margin-bottom: 10px;
+    color: #172033;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.student-field input[type="text"],
+.student-field input[type="email"],
+.student-field input[type="tel"] {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 0 13px;
+
+    border: 1px solid #d8dfeb;
+    border-radius: 9px;
+
+    background: #f8f9fc;
+    color: #172033;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.student-field input::placeholder {
+    color: #8ba0c0;
+}
+
+.student-field input[type="text"]:focus,
+.student-field input[type="email"]:focus,
+.student-field input[type="tel"]:focus {
+    background: #ffffff;
+    border-color: #635bff;
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.08);
+}
+
+.gender-field {
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.gender-field > label {
+    margin-bottom: 9px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gender > label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+
+    margin: 0;
+
+    color: #374151;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.gender input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    accent-color: #635bff;
+    cursor: pointer;
+}
+
+.data-std button {
+    width: 100%;
+    height: 43px;
+    margin-top: 4px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #635bff;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.data-std button:hover {
+    background: #4f46e5;
+}
+
+.data-std button:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 700px) {
+    .addstudent-page {
+        padding: 24px 18px 35px;
+    }
+
+    .student-form-area {
+        padding: 20px;
+    }
+
+    .data-std {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .student-page-header h1 {
+        font-size: 23px;
+    }
+
+    .student-form-area {
+        padding: 12px;
+    }
+
+    .data-std {
+        padding: 20px;
+    }
+
+    .gender {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}.addstudent-page {
+    min-height: 100%;
+    padding: 30px 32px 45px;
+    box-sizing: border-box;
+    background: #f3f5fa;
+}
+
+.student-page-header {
+    margin-bottom: 22px;
+}
+
+.student-page-header h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.student-page-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.student-form-area {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.data-std {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 20px;
+    background: #ffffff;
+    border: 1px solid #e3e7ef;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+    border-top: 3px solid #635bff;
+}
+
+.student-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.student-field > label {
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.student-field input[type="text"],
+.student-field input[type="email"],
+.student-field input[type="tel"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 13px;
+    box-sizing: border-box;
+    border: 1px solid #dbe1ea;
+    border-radius: 9px;
+    background: #f8fafc;
+    color: #172033;
+    font: 14px Arial, Helvetica, sans-serif;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.student-field input::placeholder {
+    color: #94a3b8;
+}
+
+.student-field input:hover {
+    border-color: #cbd5e1;
+}
+
+.student-field input:focus {
+    background: #ffffff;
+    border-color: #635bff;
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.10);
+}
+
+.gender-field {
+    align-items: flex-start;
+}
+
+.gender {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.gender > label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gender input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    accent-color: #635bff;
+    cursor: pointer;
+}
+
+.data-std > button {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 44px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 9px;
+    background: #635bff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(99, 91, 255, 0.18);
+    transition: 0.2s ease;
+}
+
+.data-std > button:hover {
+    background: #5046e5;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 700px) {
+    .addstudent-page { padding: 25px 20px 35px; }
+    .data-std { grid-template-columns: 1fr; padding: 24px; }
+    .data-std > button { grid-column: auto; }
+}
+
+@media (max-width: 480px) {
+    .addstudent-page { padding: 22px 14px 30px; }
+    .student-page-header h1 { font-size: 23px; }
+    .data-std { padding: 20px; }
+}
+
+/* =========================================
+   PASSWORD INPUT FIX
+   ========================================= */
+
+.student-field input[type="password"] {
+    height: 46px;
+    width: 100%;
+    border-radius: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #072858;
+    border-radius: 10px;
+
+    background: #f9fafb;
+    color: #111827;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.student-field input[type="password"]::placeholder {
+    color: #9ca3af;
+}
+
+.student-field input[type="password"]:focus {
+    border-color: #635bff;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.12);
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .addstudent-field input[type="password"] {
+        height: 46px;
+        font-size: 13px;
+    }
+}

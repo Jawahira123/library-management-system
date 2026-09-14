@@ -1,0 +1,27 @@
+require("dotenv").config();
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const connectDB = require("./config/db");
+
+const libraryRoute = require("./router/libraryroute");
+const studentRoute = require ("./router/studentroute");
+const issueRoute = require ("./router/issueroute");
+const adminRoute = require("./router/adminroute");
+
+const app = express();
+
+app.use(bodyParser.json());
+app.use(cors({
+    origin: "http://localhost:5173"
+}));
+
+
+app.use("/api/library", libraryRoute);
+app.use("/api/student", studentRoute);
+app.use("/api/issue", issueRoute);
+app.use("/api/admin", adminRoute);
+connectDB();
+app.listen(5000, () => {
+    console.log("Server is running on port 5000");
+});

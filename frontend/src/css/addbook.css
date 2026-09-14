@@ -1,0 +1,160 @@
+
+.book-details {
+    min-height: 100%;
+    padding: 30px 32px 45px;
+    box-sizing: border-box;
+    background: #f3f5fa;
+}
+
+.book-page-header {
+    margin-bottom: 22px;
+}
+
+.book-page-header h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.book-page-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.book-form-area {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.data {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 20px;
+
+    background: #ffffff;
+    border: 1px solid #e3e7ef;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+    border-top: 3px solid #635bff;
+}
+
+.book-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.book-field label {
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.book-field input {
+    width: 100%;
+    height: 44px;
+    padding: 0 13px;
+    box-sizing: border-box;
+
+    border: 1px solid #dbe1ea;
+    border-radius: 9px;
+
+    background: #f8fafc;
+    color: #172033;
+
+    font: 14px Arial, Helvetica, sans-serif;
+
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.book-field input::placeholder {
+    color: #94a3b8;
+}
+
+.book-field input:hover {
+    border-color: #cbd5e1;
+}
+
+.book-field input:focus {
+    background: #ffffff;
+    border-color: #635bff;
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.10);
+}
+
+.data > button {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    height: 44px;
+    margin-top: 2px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #635bff;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(99, 91, 255, 0.18);
+    transition: 0.2s ease;
+}
+
+.data > button:hover {
+    background: #5046e5;
+    transform: translateY(-1px);
+}
+
+.data > button:active {
+    transform: translateY(0);
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 700px) {
+
+    .book-details {
+        padding: 25px 20px 35px;
+    }
+
+    .data {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+
+    .data > button {
+        grid-column: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .book-details {
+        padding: 22px 14px 30px;
+    }
+
+    .book-page-header h1 {
+        font-size: 23px;
+    }
+
+    .data {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,232 @@
+.editstudent-page {
+    min-height: 100%;
+    padding: 30px 32px 45px;
+    box-sizing: border-box;
+    background: #f3f5fa;
+}
+
+.editstudent-header {
+    margin-bottom: 22px;
+}
+
+.editstudent-header h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.editstudent-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.editstudent-form-area {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.editstudent-form {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 20px;
+    background: #ffffff;
+    border: 1px solid #e3e7ef;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+    border-top: 3px solid #635bff;
+}
+
+.editstudent-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.editstudent-field > label {
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.editstudent-field input[type="text"],
+.editstudent-field input[type="email"],
+.editstudent-field input[type="tel"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 13px;
+    box-sizing: border-box;
+    border: 1px solid #dbe1ea;
+    border-radius: 9px;
+    background: #f8fafc;
+    color: #172033;
+    font: 14px Arial, Helvetica, sans-serif;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.editstudent-field input::placeholder {
+    color: #94a3b8;
+}
+
+.editstudent-field input:hover {
+    border-color: #cbd5e1;
+}
+
+.editstudent-field input:focus {
+    background: #ffffff;
+    border-color: #635bff;
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.10);
+}
+
+.editstudent-gender {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.editstudent-gender label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.editstudent-gender input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    accent-color: #635bff;
+    cursor: pointer;
+}
+
+.editstudent-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.editstudent-actions button {
+    flex: 1;
+    height: 44px;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.save-student-btn {
+    background: #635bff;
+    color: #ffffff;
+    box-shadow: 0 5px 12px rgba(99, 91, 255, 0.18);
+}
+
+.save-student-btn:hover {
+    background: #5046e5;
+    transform: translateY(-1px);
+}
+
+.cancel-student-btn {
+    background: #eef2f7;
+    color: #475569;
+}
+
+.cancel-student-btn:hover {
+    background: #e2e8f0;
+}
+
+.editstudent-loading {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f5fa;
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .editstudent-page { padding: 25px 20px 35px; }
+    .editstudent-form { grid-template-columns: 1fr; padding: 24px; }
+    .editstudent-actions { grid-column: auto; }
+}
+
+@media (max-width: 480px) {
+    .editstudent-page { padding: 22px 14px 30px; }
+    .editstudent-header h1 { font-size: 23px; }
+    .editstudent-form { padding: 20px; }
+    .editstudent-actions { flex-direction: column; }
+}
+/* =========================================
+   NEW PASSWORD INPUT FIX
+   ========================================= */
+
+.editstudent-field input[type="password"] {
+    width: 100%;
+    height: 44px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    background: #f9fafb;
+    color: #111827;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.editstudent-field input[type="password"]::placeholder {
+    color: #9ca3af;
+}
+
+.editstudent-field input[type="password"]:focus {
+    border-color: #635bff;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.12);
+}
+
+
+/* Password helper text */
+
+.editstudent-password-note {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    text-align: left;
+}

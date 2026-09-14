@@ -1,0 +1,641 @@
+.dashboard-page {
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 30px 32px 45px;
+    background: #f3f5fa;
+}
+
+.dashboard-header {
+    margin-bottom: 26px;
+}
+
+.dashboard-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.dashboard-subtitle {
+    margin: 7px 0 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.wave-icon {
+    color: #f59e0b;
+
+    animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Summary cards */
+
+.cards-dash {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 34px;
+}
+
+.card {
+    min-height: 155px;
+
+    box-sizing: border-box;
+
+    padding: 21px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e7ef;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.09);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    font-size: 20px;
+}
+
+.card-label {
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.blue {
+    color: #635bff;
+    background: #eef2ff;
+}
+
+.green {
+    color: #059669;
+    background: #ecfdf5;
+}
+
+.orange {
+    color: #d97706;
+    background: #fffbeb;
+}
+
+.purple {
+    color: #7c3aed;
+    background: #f5f3ff;
+}
+
+.blue-card .card-label {
+    color: #4f46e5;
+    background: #eef2ff;
+}
+
+.green-card .card-label {
+    color: #047857;
+    background: #ecfdf5;
+}
+
+.orange-card .card-label {
+    color: #b45309;
+    background: #fffbeb;
+}
+
+.purple-card .card-label {
+    color: #6d28d9;
+    background: #f5f3ff;
+}
+
+.card h3 {
+    margin: 0 0 6px;
+
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card h2 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+/* Section headings */
+
+.dashboard-section-heading {
+    margin: 0 0 15px;
+}
+
+.dashboard-section-heading h2 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dashboard-section-heading p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.students-heading {
+    margin-top: 30px;
+}
+
+/* Overview */
+
+.overview-grid {
+    display: grid;
+
+    grid-template-columns: minmax(330px, 0.9fr) minmax(500px, 1.5fr);
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+.overview-card {
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e7ef;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+.availability-card {
+    min-height: 390px;
+
+    padding: 22px;
+}
+
+.recent-card {
+    min-height: 390px;
+
+    padding: 22px;
+}
+
+.overview-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.overview-card-header h3 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.overview-card-header p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.availability-icon,
+.small-card-icon {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    color: #635bff;
+    background: #eef2ff;
+
+    font-size: 16px;
+}
+
+/* Donut */
+
+.donut-container {
+    width: 100%;
+    height: 245px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5px;
+}
+
+.donut-chart {
+    position: relative;
+
+    width: 270px;
+    height: 245px;
+}
+
+.donut-center {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    pointer-events: none;
+}
+
+.donut-center h2 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.donut-center p {
+    margin: 4px 0 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.availability-legend {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 3px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 12px;
+
+    border-radius: 9px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.legend-item strong {
+    margin-left: auto;
+
+    color: #172033;
+
+    font-size: 13px;
+}
+
+.legend-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+.available-dot {
+    background: #635bff;
+}
+
+.issued-dot {
+    background: #e879f9;
+}
+
+/* Tables */
+
+.recent-table-wrapper {
+    width: 100%;
+
+    margin-top: 20px;
+
+    overflow-x: auto;
+}
+
+.dashboard-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.dashboard-table th {
+    height: 42px;
+
+    padding: 0 12px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+.dashboard-table td {
+    height: 52px;
+
+    padding: 0 12px;
+
+    color: #475569;
+
+    border-bottom: 1px solid #eef0f4;
+
+    font-size: 13px;
+
+    text-align: left;
+
+    white-space: nowrap;
+}
+
+.dashboard-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.dashboard-table tbody tr:hover {
+    background: #fafaff;
+}
+
+.dashboard-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.book-name,
+.student-name {
+    color: #172033 !important;
+
+    font-weight: 600;
+}
+
+.dashboard-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+.status-available {
+    color: #047857;
+
+    background: #ecfdf5;
+}
+
+.status-issued {
+    color: #b91c1c;
+
+    background: #fef2f2;
+}
+
+.empty-row {
+    height: 90px !important;
+
+    color: #94a3b8 !important;
+
+    text-align: center !important;
+}
+
+/* Students */
+
+.students-card {
+    padding: 0;
+
+    overflow: hidden;
+}
+
+.students-card .recent-table-wrapper {
+    margin-top: 0;
+}
+
+.students-table th {
+    background: #111827;
+
+    color: #ffffff;
+
+    border-bottom: none;
+}
+
+/* Loading */
+
+.dashboard-loading {
+    min-height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #64748b;
+
+    background: #f3f5fa;
+
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 1150px) {
+
+    .cards-dash {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .availability-card,
+    .recent-card {
+        min-height: auto;
+    }
+
+    .donut-container {
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .dashboard-page {
+        padding: 24px 20px 35px;
+    }
+
+    .dashboard-title {
+        font-size: 23px;
+    }
+
+    .dashboard-subtitle {
+        font-size: 13px;
+    }
+
+    .cards-dash {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 14px;
+    }
+
+    .card {
+        min-height: 140px;
+
+        padding: 18px;
+    }
+
+    .card h2 {
+        font-size: 27px;
+    }
+
+    .overview-grid {
+        gap: 15px;
+    }
+
+    .availability-legend {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .dashboard-page {
+        padding: 20px 14px 30px;
+    }
+
+    .cards-dash {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-title {
+        font-size: 21px;
+    }
+
+    .dashboard-section-heading h2 {
+        font-size: 18px;
+    }
+
+    .availability-card,
+    .recent-card {
+        padding: 18px;
+    }
+
+    .donut-chart {
+        width: 250px;
+        height: 230px;
+    }
+
+    .donut-container {
+        height: 230px;
+    }
+
+}
