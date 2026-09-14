@@ -23,7 +23,7 @@ function Editbook() {
             try {
 
                 const response = await fetch(
-                    `http://library-management-system-9ds.onrender.com/api/library/${id}`
+                    `https://library-management-system-r9ds.onrender.com/api/library/${id}`
                 );
 
                 const data = await response.json();
@@ -77,7 +77,7 @@ function Editbook() {
         try {
 
             const response = await fetch(
-                `http://library-management-system-9ds.onrender.com/api/library/${id}`,
+                `https://library-management-system-r9ds.onrender.com/api/library/${id}`,
                 {
                     method: "PATCH",
                     headers: {

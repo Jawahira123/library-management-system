@@ -26,8 +26,8 @@ function Issuebk() {
 
                 const [studentResponse, bookResponse] =
                     await Promise.all([
-                        fetch("http://library-management-system-9ds.onrender.com/api/student"),
-                        fetch("http://library-management-system-9ds.onrender.com/api/library")
+                        fetch("https://library-management-system-r9ds.onrender.com/api/student"),
+                        fetch("https://library-management-system-r9ds.onrender.com/api/library")
                     ]);
 
                 const studentData = await studentResponse.json();
@@ -83,7 +83,7 @@ function Issuebk() {
         try {
 
             const response = await fetch(
-                "http://library-management-system-9ds.onrender.com/api/issue",
+                "https://library-management-system-r9ds.onrender.com/api/issue",
                 {
                     method: "POST",
                     headers: {

@@ -45,7 +45,7 @@ function StudentLogin() {
 
         try {
             const response = await fetch(
-                "http://library-management-system-9ds.onrender.com/api/student/login",
+                "https://library-management-system-r9ds.onrender.com/api/student/login",
                 {
                     method: "POST",
                     headers: {

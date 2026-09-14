@@ -27,7 +27,7 @@ function Addstudents() {
         e.preventDefault();
 
         try {
-            const response = await fetch("http://library-management-system-9ds.onrender.com/api/student", {
+            const response = await fetch("https://library-management-system-r9ds.onrender.com/api/student", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

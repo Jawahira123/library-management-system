@@ -24,7 +24,7 @@ function Students() {
             try {
 
                 const response = await fetch(
-                    "http://library-management-system-9ds.onrender.com/api/student"
+                    "https://library-management-system-r9ds.onrender.com/api/student"
                 );
 
                 const data = await response.json();
@@ -95,7 +95,7 @@ function Students() {
         try {
 
             const response = await fetch(
-                `http://library-management-system-9ds.onrender.com/api/student/${id}`,
+                `https://library-management-system-r9ds.onrender.com/api/student/${id}`,
                 {
                     method: "DELETE"
                 }
