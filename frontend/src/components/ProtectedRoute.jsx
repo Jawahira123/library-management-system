@@ -6,7 +6,7 @@ function ProtectedRoute() {
     const { adminLoggedIn } = useAuth();
 
     if (!adminLoggedIn) {
-        return <Navigate to="/Login" replace />;
+        return <Navigate to="/" replace />;
     }
 
     return <Outlet />;
